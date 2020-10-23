@@ -1,0 +1,727 @@
+/* Prefixed by https://autoprefixer.github.io */
+/* BROWSER RESET */
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, img {
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* font-size: 100%; */
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+a {
+  color: rgb(60, 141, 144);
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.returnTo {
+  color: rgb(60, 141, 144);
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+/* topOfPage holds wideBar */
+.topOfPage {
+  background-color: white;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.refresh {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 9px 5px;
+  position: fixed;
+  right: 15px;
+  top: 10px;
+  z-index: 3;
+}
+.refresh:hover {
+  text-decoration: underline;
+}
+.wideBar {
+  background-color: rgb(72, 168, 171);
+  border-bottom: 4px solid white;
+  border-top: 4px solid white;
+  -webkit-box-shadow: 0 0 12px rgb(64, 64, 64);
+          box-shadow: 0 0 12px rgb(64, 64, 64);
+  margin: 0 auto 25px;
+  min-height: 60px;
+  padding: 6px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.wideBarSpace {
+  background-color: white;
+  height: 60px;
+}
+.menuIcon {
+  border-radius: 3px;
+  margin-left: 6px;
+  padding: 2px 0 8px;
+  width: 48px;
+}
+.menuIcon:hover {
+  background-color: black;
+}
+.menuIcon div {
+  background-color: white;
+  border-radius: 3px;
+  height: 3px;
+  margin: 6px auto 0;
+  width: 36px;
+}
+
+/* flexContainerContent holds everything under topOfPage */
+.flexContainerContent {
+  margin: 0 auto 20px;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menuHolder {
+  background-color: white;
+  border-bottom: 4px solid rgb(72, 168, 171);
+  -webkit-box-shadow: 2px 10px 10px 0 rgb(105, 105, 105);
+          box-shadow: 2px 10px 10px 0 rgb(105, 105, 105);
+  display: none;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 15px 0 10px;
+  position: fixed;
+  width: 100%;
+}
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  max-width: 1050px;
+}
+.menu div {
+  border-bottom: 1px solid rgb(72, 168, 171);
+  cursor: pointer;
+  margin: 0 10px 10px;
+  text-align: center;
+  width: 200px;
+}
+.content {
+  margin-top: 95px;
+  padding: 0 10px;
+  width: 800px;
+}
+.menuMarkerHolder, .genMarkerHolder {
+  position: relative;
+}
+.menuScrollToMarker, .genNewScrollTo, .intro {
+  position: absolute;
+  top: -88px;
+}
+.tallBannerBorder {
+  border: 1px solid black;
+  border-radius: 9px;
+  height: 602px;
+  margin-top: 95px;
+  width: 302px;
+}
+#bannerLeft {
+  position: fixed;
+  left: 30px;
+}
+#bannerRight {
+  position: fixed;
+  right: 30px;
+}
+.tallBanner {
+  border-radius: 8px;
+  height: 600px;
+  width: 300px;
+}
+.placeHolder {
+  height: 602px;
+  margin-top: 95px;
+  width: 302px;
+}
+.bottomBanners {
+  display: none;
+}
+/* sectionHolder holds buttonHolder, listHolder */
+h1, h2, h3 {
+  border-bottom: 1px solid rgb(72, 168, 171);
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+h1 {
+  font-size: 135%;
+}
+h2 {
+  font-size: 130%;
+}
+h3 {
+  font-size: 120%;
+}
+.sectionHolder {
+  margin: 0 0 35px;
+}
+.buttonHolder, .letterButtonHolder {
+  margin: 0 auto 18px;
+}
+.outerBorderButton, .outerBorderLetters  {
+  border-radius: 9px;
+  -webkit-box-shadow: 2px 2px 6px 0 rgb(120, 120, 120);
+          box-shadow: 2px 2px 6px 0 rgb(120, 120, 120);
+  margin: 0 auto 18px;
+  padding: 5px;
+}
+.outerBorderLetters  {
+  cursor: auto;
+}
+.borderLetters {
+  border: 2px solid rgb(72, 168, 171);
+  border-radius: 8px;
+  padding: 5px 0;
+}
+.button, .genButton  {
+  border: 2px solid rgb(72, 168, 171);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 105%;
+  font-weight: 400;
+  padding: 3px;
+  text-align: center;
+}
+.lettersHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 540px;
+}
+.lettersHolder div {
+  height: 25px;
+  margin: 10px;
+  width: 25px;
+}
+.letterButton {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+.listHolder {
+  border: 1px solid rgb(72, 168, 171);
+  border-radius: 8px;
+  display: none;
+  margin: 0 auto 20px;
+  padding: 25px 20px 18px;
+}
+h4 {
+  border-bottom: 1px solid rgb(72, 168, 171);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+}
+h5 {
+  font-size: 96%;
+  font-weight: 300;
+  padding-top: 2px;
+  text-align: left;
+}
+h6 {
+  font-weight: 300;
+  line-height: 1;
+  text-align: left;
+}
+/* Need width for SetOfNames divs in listHolder, height is irrelevent with rows */
+.holdsSetOfNamesShort, .holdsSetOfNamesWide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0 auto;
+}
+.closer, .genNew, .genCloser {
+  color: rgb(60, 141, 144);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+}
+.closer {
+  margin: 0 auto;
+  text-align: right;
+}
+.genNew, .genCloser {
+  padding: 0 10px;
+}
+
+.flexGen1, .flexGen2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flexGen1 {
+  margin: 0 auto 20px;
+}
+.flexGen2 {
+  margin: 0 auto;
+  padding-top: 15px;
+}
+.holdsSetOfNamesShort {
+  width: 705px;
+}
+.h4forNameShort, .divWithH4andH5short {
+  margin: 0 10px 10px;
+  width: 121px;
+}
+.holdsSetOfNamesWide {
+  width: 648px;
+}
+.divWithH4andH5wide {
+  margin: 0 10px 14px;
+  width: 196px;
+}
+.h4forNameWide, .h5withNameWide {
+  margin: 0;
+  width: 196px;
+}
+
+.paragraph {
+  font-size: 100%;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  line-height: 1.6;
+  margin: 0 auto 22px;
+  padding: 0 3px;
+  text-align: justify;
+}
+.paragraph:first-of-type {
+  margin: 0 auto 26px;
+}
+.holdsInfo {
+  border-top: 2px solid rgb(72, 168, 171);
+  border-bottom: 2px solid rgb(72, 168, 171);
+  margin: 20px auto 0;
+  padding: 10px 0 8px;
+}
+.holdsReference {
+  margin: 5px auto 20px;
+  padding: 10px 0 5px;
+}
+.reference, .info {
+  font-size: 15px;
+  margin: 0 auto 6px;
+  text-align: left;
+}
+
+@media (max-width: 1500px) {
+  .content {
+    width: 750px;
+  }
+  .holdsSetOfNamesShort {
+    width: 564px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .content {
+    width: 650px;
+  }
+  .holdsSetOfNamesWide {
+    width: 490px;
+  }
+  .divWithH4andH5wide, .h4forNameWide, .h5withNameWide {
+    width: 225px;
+  }
+}
+
+/* remove banner on the right */
+@media (max-width: 1350px) {
+  .flexContainerContent {
+    width: 1170px;
+  }
+  .content {
+    width: 800px;
+  }
+  #bannerRight, #placeHolderRight {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .flexContainerContent {
+    width: 1150px;
+  }
+  .content {
+    width: 775px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .flexContainerContent {
+    width: 1100px;
+  }
+  .content {
+    width: 725px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .flexContainerContent {
+    width: 1075px;
+  }
+  .content {
+    width: 700px;
+  }
+  .holdsSetOfNamesWide {
+    width: 490px;
+  }
+  .divWithH4andH5wide, .h4forNameWide, .h5withNameWide {
+    width: 225px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .flexContainerContent {
+    width: 1000px;
+  }
+  .content {
+    width: 620px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .flexContainerContent {
+    width: 900px;
+  }
+  .content {
+    width: 520px;
+  }
+  .lettersHolder {
+    width: 405px;
+  }
+  .holdsSetOfNamesShort {
+    width: 423px;
+  }
+  .holdsSetOfNamesWide {
+    width: 420px;
+  }
+  .divWithH4andH5wide, .h4forNameWide, .h5withNameWide {
+    width: 190px;
+  }
+}
+
+@media (max-width: 900px) {
+  .flexContainerContent {
+    width: 800px;
+  }
+  .content  {
+    width: 438px;
+  }
+  .lettersHolder {
+    width: 360px;
+  }
+  .holdsSetOfNamesShort {
+    width: 282px;
+  }
+  .holdsSetOfNamesWide {
+    width: 280px;
+  }
+  .divWithH4andH5wide, .h4forNameWide, .h5withNameWide {
+    width: 260px;
+  }
+  .info {
+    max-width: 275px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .content  {
+    width: 420px;
+  }
+}
+
+/* content fills page, banners goes to bottom */
+@media (max-width: 800px) {
+  .flexContainerContent {
+    width: 100%;
+  }
+  .content {
+    padding: 0;
+    width: 100%;
+  }
+  .lettersHolder {
+    width: 540px;
+  }
+  .holdsSetOfNamesShort {
+    width: 564px;
+  }
+  .holdsSetOfNamesWide {
+    width: 648px;
+  }
+  .divWithH4andH5wide {
+    width: 196px;
+  }
+  .h4forNameWide, .h5withNameWide {
+    width: 196px;
+  }
+  #bannerLeft, #placeHolderLeft {
+    display: none;
+  }
+  .bottomBanners {
+    display: block;
+    margin: 30px auto 0;
+  }
+  .bottomBannersHolder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 630px;
+  }
+  .tallBannerBorder {
+    margin: 0 0 20px;
+  }
+  .info {
+    max-width: 800px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 750px) {
+  .bottomBannersHolder {
+    width: 302px;
+  }
+
+  .holdsSetOfNamesWide {
+    width: 420px;
+  }
+  .divWithH4andH5wide, .h4forNameWide, .h5withNameWide {
+    width: 190px;
+  }
+}
+
+@media (max-width: 675px) {
+  .holdsSetOfNamesShort {
+    width: 423px;
+  }
+}
+
+@media (max-width: 650px) {
+  .lettersHolder {
+    width: 425px;
+  }
+
+}
+
+@media (max-width: 555px) {
+  .lettersHolder {
+    width: 360px;
+  }
+  .holdsSetOfNamesWide {
+    width: 280px;
+  }
+  .divWithH4andH5wide, .h4forNameWide, .h5withNameWide {
+    width: 260px;
+  }
+}
+
+@media (max-width: 535px) {
+  .holdsSetOfNamesShort {
+    width: 282px;
+  }
+}
+
+@media (max-width: 500px) {
+  .info {
+    max-width: 275px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .reference {
+    margin: 0 auto 5px;
+  }
+  .lettersHolder {
+    width: 270px;
+  }
+  .holdsSetOfNamesWide {
+    width: 270px;
+  }
+  .divWithH4andH5wide, .h4forNameWide, .h5withNameWide {
+    width: 250px;
+  }
+  .h4forNameWide, .h5withNameWide {
+    margin: 0;
+  }
+}
+
+@media (max-width: 385px) {
+  .flexContainerContent {
+    padding: 0 18px;
+  }
+
+}
+/* iPhone 375px */
+
+@media (max-width: 380px) {
+  .flexContainerContent {
+    padding: 0 18px;
+  }
+  .holdsSetOfNamesShort {
+    width: 282px;
+  }
+  .h4forNameShort, .divWithH4andH5short {
+    margin: 0 10px 10px;
+    width: 121px;
+  }
+}
+/*
+My Android phone shows the 360px version shrunk to fit and ignores smaller
+queries. It will not use @media (max-width: 359px) or less.
+*/
+@media (max-width: 360px) {
+  .button, .genButton   {
+    font-size: 109%;
+  }
+  .paragraph {
+    font-size: 110%;
+  }
+  h5 {
+    font-size: 97%;
+  }
+}
+
+@media (max-width: 359px) {
+  h1 {
+    font-size: 120%;
+  }
+  h2 {
+    font-size: 115%;
+  }
+  h3 {
+    font-size: 110%;
+  }
+  .paragraph {
+    font-size: 100%;
+  }
+  .listHolder {
+    padding: 20px 14px 9px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .h4forNameShort, .divWithH4andH5short {
+    margin: 0 8px 10px;
+    width: 117px;
+  }
+  /* 117 x 2 = 234 + 32 = 266 */
+  .holdsSetOfNamesShort {
+    width: 266px;
+  }
+  .holdsSetOfNamesWide {
+    width: 220px;
+  }
+  .divWithH4andH5wide, .h4forNameWide, .h5withNameWide {
+    width: 200px;
+  }
+  .bottomBannersHolder {
+    width: 282px;
+  }
+  .tallBannerBorder {
+    height: 562px;
+    width: 282px;
+  }
+  .tallBanner {
+    height: 560px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 329px) {
+  .listHolder {
+    padding: 20px 10px 9px;
+  }
+  .h4forNameShort, .divWithH4andH5short {
+    margin: 0 7px 10px;
+  }
+  /* 117 x 2 = 234 + 28 = 262 */
+  .holdsSetOfNamesShort {
+    width: 262px;
+  }
+}
+
+/* iPhone uses @media (max-width: 320px) */
+@media (max-width: 319px) {
+  .lettersHolder {
+    width: 225px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  .h4forNameShort, .divWithH4andH5short {
+    width: 110px;
+  }
+  /* 110 x 2 = 220 + 28 = 248 */
+  .holdsSetOfNamesShort {
+    width: 248px;
+  }
+  .bottomBannersHolder {
+    width: 252px;
+  }
+  .tallBannerBorder {
+    height: 502px;
+    width: 252px;
+  }
+  .tallBanner {
+    height: 500px;
+    width: 250px;
+  }
+}
