@@ -512,29 +512,35 @@ for (let i = 0; i < menuItems.length; i++) {
 
 // name generator...............................................................
 const actualNames = [
-  'Alana', 'Alani', 'Alanna', 'Alaric', 'Alaya', 'Alayna', 'Albert', 'Alden', 'Alena', 'Aliana', 'Alijah', 'Alina', 'Alisa', 'Alisha', 'Alison', 'Aliya', 'Aliza', 'Allan', 'Allison', 'Alondra', 'Alonso', 'Alonzo', 'Alora', 'Alvaro', 'Alvina', 'Amanda', 'Amani', 'Amara', 'Amari', 'Amaris', 'Amaya', 'Amiah', 'Amias', 'Amina', 'Amira', 'Amiya', 'Amora', 'Amoura', 'Anabel', 'Anahi', 'Anaya', 'Anika', 'Anita', 'Aniya', 'Antony', 'Ariah', 'Arian', 'Ariana', 'Ariel', 'Ariya', 'Arleen', 'Arlene', 'Arline', 'Armando', 'Armani', 'Averie', 'Avery', 'Aviana', 'Azalea', 'Aziel', 'Barney', 'Belen', 'Bella', 'Bellamy', 'Benita', 'Bonita', 'Caden', 'Callan', 'Cameron', 'Camila', 'Camilo', 'Caren', 'Carina', 'Carla', 'Carlene', 'Carlos', 'Carlotta', 'Caroline', 'Carolyn', 'Casandra', 'Casen', 'Celina', 'Charity', 'Charla', 'Charleen', 'Charlene', 'Charlize', 'Colby', 'Coleen', 'Colette', 'Coraline', 'Corina', 'Dalary', 'Daleyza', 'Dallas', 'Danette', 'Daniel', 'Daniela', 'Danika', 'Danita', 'Daren', 'Darian', 'Dariana', 'Dariel', 'Darien', 'Dario', 'Darion', 'Darius', 'Darla', 'Darleen', 'Darlene', 'Darnell', 'Davian', 'Davina', 'Davion', 'Daylen', 'Dayna', 'Dilan', 'Dillan', 'Dillon', 'Doreen', 'Dorian', 'Elbert', 'Elena', 'Elian', 'Eliana', 'Elias', 'Elijah', 'Elina', 'Elisa', 'Eliseo', 'Elisha', 'Eliza', 'Elliana', 'Elliot', 'Ellis', 'Ellison', 'Elora', 'Emani', 'Emerie', 'Emerson', 'Emery', 'Emilee', 'Emory', 'Erika', 'Ernesto', 'Evelyn', 'Evette', 'Galen', 'Garland', 'Goldie', 'Haven', 'Jakari', 'Jakayla', 'Jalen', 'Jalisa', 'Jamari', 'Jameson', 'Jamila', 'Jamison', 'Janette', 'Janiah', 'Janiya', 'Jayla', 'Jaylen', 'Jayson', 'Jenifer', 'Jesiah', 'Jillian', 'Jordan', 'Jordin', 'Jordon', 'Joselyn', 'Josette', 'Josiah', 'Jovan', 'Jovani', 'Julian', 'Juliana', 'Julien', 'Julio', 'Julius', 'Junior', 'Juniper', 'Kaden', 'Kalani', 'Kamari', 'Kameron', 'Kamila', 'Karen', 'Karina', 'Karla', 'Karsyn', 'Kasandra', 'Kasen', 'Katelyn', 'Katina', 'Kayla', 'Kaylani', 'Kaylen', 'Kayson', 'Kenisha', 'Killian', 'Kimora', 'Kirsten', 'Kirstin', 'Kolby', 'Lashanda', 'Latasha', 'Latisha', 'Layla', 'Lilian', 'Liliana', 'Lillian', 'Lilliana', 'Lilly', 'Lorelai', 'Loren', 'Lorena', 'Lorenzo', 'Loretta', 'Lorna', 'Madalyn', 'Madeline', 'Madelyn', 'Madison', 'Madisyn', 'Malachi', 'Malakai', 'Malani', 'Malaya', 'Maliah', 'Manuel', 'Maranda', 'Maren', 'Mariah', 'Marian', 'Mariana', 'Mariela', 'Marina', 'Mario', 'Marion', 'Marisa', 'Maritza', 'Marla', 'Marlen', 'Marlena', 'Marlene', 'Marlon', 'Marsha', 'Marshall', 'Maximo', 'Maximus', 'Mayra', 'Mayson', 'Melina', 'Melisa', 'Melody', 'Mikayla', 'Milan', 'Milana', 'Milani', 'Milena', 'Miller', 'Monika', 'Monique', 'Morgan', 'Moriah', 'Noreen', 'Orion', 'Raven', 'Rayna', 'Renata', 'Renita', 'Rolando', 'Rolland', 'Roman', 'Romeo', 'Romina', 'Rosalee', 'Rosalyn', 'Rosanna', 'Roselyn', 'Rosetta', 'Sally', 'Samara', 'Samira', 'Samuel', 'Saniya', 'Sarahi', 'Sariah', 'Sarina', 'Savana', 'Savanna', 'Savion', 'Shayla', 'Shayna', 'Soren', 'Talan', 'Tanika', 'Tanisha', 'Taniya', 'Teresa', 'Valentin', 'Valerie', 'Valery', 'Vanesa', 'Wilbert', 'Wilda', 'Willa', 'William', 'Willis', 'Zelda', 'Zella',
+  'Adalee', 'Adaline', 'Adalyn', 'Adeline', 'Adelyn', 'Adiel', 'Adonis', 'Alana', 'Alani', 'Alanna', 'Alaric', 'Alaya', 'Alayna', 'Albert', 'Alden', 'Alena', 'Aliah', 'Aliana', 'Alijah', 'Alina', 'Alisa', 'Alisha', 'Alison', 'Alissa', 'Aliya', 'Aliza', 'Allan', 'Allison', 'Alondra', 'Alonso', 'Alonzo', 'Alora', 'Alvaro', 'Alvina', 'Amanda', 'Amani', 'Amara', 'Amari', 'Amaris', 'Amaya', 'Amiah', 'Amias', 'Amina', 'Amira', 'Amiya', 'Amora', 'Amoura', 'Anabel', 'Anahi', 'Anaya', 'Anika', 'Anita', 'Aniya', 'Antony', 'Ariah', 'Arian', 'Ariana', 'Ariel', 'Ariya', 'Arleen', 'Arlene', 'Arline', 'Armando', 'Armani', 'Avalyn', 'Averie', 'Avery', 'Aviana', 'Azalea', 'Aziel', 'Barney', 'Belen', 'Bella', 'Bellamy', 'Benita', 'Bessie', 'Bonita', 'Brinley', 'Caden', 'Callan', 'Cameron', 'Camila', 'Camilo', 'Caren', 'Carina', 'Carla', 'Carlene', 'Carlos', 'Carlotta', 'Caroline', 'Carolyn', 'Casandra', 'Casen', 'Cassie', 'Celina', 'Charity', 'Charla', 'Charleen', 'Charlene', 'Charlize', 'Colby', 'Coleen', 'Coleson', 'Colette', 'Coraline', 'Corina', 'Dalary', 'Daleyza', 'Dallas', 'Danette', 'Daniel', 'Daniela', 'Danika', 'Danita', 'Daren', 'Darian', 'Dariana', 'Dariel', 'Darien', 'Dario', 'Darion', 'Darius', 'Darla', 'Darleen', 'Darlene', 'Darnell', 'Davian', 'Davina', 'Davion', 'Daylen', 'Dayna', 'Dessie', 'Dilan', 'Dillan', 'Dillon', 'Doreen', 'Dorian', 'Elbert', 'Elena', 'Elian', 'Eliana', 'Elias', 'Elijah', 'Elina', 'Elisa', 'Eliseo', 'Elisha', 'Elissa', 'Eliza', 'Elliana', 'Elliot', 'Ellis', 'Ellison', 'Elora', 'Emani', 'Emerie', 'Emerson', 'Emery', 'Emilee', 'Emory', 'Erika', 'Ernesto', 'Evalyn', 'Evelyn', 'Evette', 'Finley', 'Franco', 'Galen', 'Garland', 'Goldie', 'Haven', 'Jakari', 'Jakayla', 'Jalen', 'Jalisa', 'Jamari', 'Jameson', 'Jamila', 'Jamison', 'Janette', 'Janiah', 'Janiya', 'Jayla', 'Jaylen', 'Jayson', 'Jenifer', 'Jesiah', 'Jessica', 'Jessie', 'Jillian', 'Jordan', 'Jordin', 'Jordon', 'Joselyn', 'Josette', 'Josiah', 'Joslyn', 'Jovan', 'Jovani', 'Julian', 'Juliana', 'Julien', 'Julio', 'Julius', 'Junior', 'Juniper', 'Kaden', 'Kalani', 'Kamari', 'Kameron', 'Kamila', 'Kamora', 'Karen', 'Karina', 'Karla', 'Karsyn', 'Kasandra', 'Kasen', 'Kassie', 'Katelyn', 'Katina', 'Kayla', 'Kaylani', 'Kaylen', 'Kayson', 'Kendall', 'Kenisha', 'Kenley', 'Khalani', 'Killian', 'Kimora', 'Kirsten', 'Kirstin', 'Kolby', 'Latasha', 'Latisha', 'Layla', 'Lessie', 'Lilian', 'Liliana', 'Lillian', 'Lilliana', 'Lilly', 'Lorelai', 'Loren', 'Lorena', 'Lorenzo', 'Loretta', 'Lorna', 'Madalyn', 'Madeline', 'Madelyn', 'Madison', 'Madisyn', 'Malachi', 'Malakai', 'Malani', 'Malaya', 'Maliah', 'Manuel', 'Maranda', 'Maren', 'Mariah', 'Marian', 'Mariana', 'Mariela', 'Marina', 'Mario', 'Marion', 'Marisa', 'Maritza', 'Marla', 'Marlen', 'Marlena', 'Marlene', 'Marlon', 'Marsha', 'Marshall', 'Maximo', 'Maximus', 'Mayra', 'Mayson', 'Melani', 'Melina', 'Melisa', 'Melody', 'Mikayla', 'Milan', 'Milana', 'Milani', 'Milena', 'Miller', 'Monika', 'Monique', 'Morgan', 'Moriah', 'Noreen', 'Orion', 'Randall', 'Raven', 'Rayna', 'Renata', 'Renita', 'Rolando', 'Rolland', 'Roman', 'Romeo', 'Romina', 'Rosalee', 'Rosalyn', 'Rosanna', 'Roselyn', 'Rosetta', 'Roslyn', 'Sally', 'Samara', 'Samira', 'Samuel', 'Saniya', 'Sarahi', 'Sariah', 'Sarina', 'Savana', 'Savanna', 'Savion', 'Shayla', 'Shayna', 'Soraya', 'Soren', 'Talan', 'Tanika', 'Tanisha', 'Taniya', 'Teresa', 'Tessa', 'Tessie', 'Tinley', 'Valentin', 'Valerie', 'Valery', 'Vanesa', 'Wilbert', 'Wilda', 'Willa', 'William', 'Willis', 'Zayla', 'Zelda', 'Zella', // 349
   // Added
-  'Adison', 'Adisyn', 'Aleson', 'Anisa', 'Aubriel', 'Aubriela', 'Belamy', 'Calan', 'Calen', 'Cally', 'Carisa', 'Casidy', 'Casius', 'Casondra', 'Elison', 'Hally', 'Hasan', 'Jakeline', 'Jakoline', 'Jakson', 'Janesa', 'Jolly', 'Kally', 'Karisa', 'Kasidy', 'Kilian', 'Madaline', 'Madeson', 'Malisa', 'Malory', 'Mikenzie', 'Rosela', 'Wilard', 'Willy'
+  'Adison', 'Adisyn', 'Aleson', 'Anisa', 'Aubriel', 'Aubriela', 'Belamy', 'Calan', 'Calen', 'Cally', 'Carisa', 'Casidy', 'Casius', 'Casondra', 'Elison', 'Hally', 'Hasan', 'Jakeline', 'Jakoline', 'Jakson', 'Janesa', 'Kally', 'Karisa', 'Kasidy', 'Kendel', 'Kilian', 'Madaline', 'Madeson', 'Malisa', 'Malory', 'Mikenzie', 'Randel', 'Rosela', 'Wilard', 'Willy'
 ]
 const rejects = [
-  'Alias', 'Alien', 'Allas', 'Amino', 'Amity', 'Antena', 'Antic', 'Arena', 'Aroma', 'Ashen', 'Audio', 'Avian', 'Baren', 'Belly', 'Caller', 'Cameo', 'Casino', 'Casio', 'Celery', 'Colen', 'Colic', 'Colony', 'Corney', 'Corona', 'Dally', 'Evenly', 'Every', 'Evian', 'Finery', 'Galery', 'Galore', 'Golden', 'Golly', 'Jeneric', 'Killer', 'Koran', 'Korona', 'Lesen', 'Lesion', 'Linen', 'Manic', 'Minaret', 'Minion', 'Organ', 'Pardin', 'Pardon', 'Pariah', 'Parody', 'Rayon', 'Rosary', 'Salamy', 'Salary', 'Sanity', 'Sonic', 'Taleban', 'Talker', 'Taller', 'Tallon', 'Tally', 'Tanery', 'Tonic', 'Vally', 'Vanila'
+  'Alias', 'Alien', 'Allas', 'Amino', 'Amity', 'Antena', 'Antic', 'Arena', 'Aroma', 'Ashen', 'Audio', 'Avian', 'Baren', 'Belly', 'Caller', 'Cameo', 'Candor', 'Casino', 'Casio', 'Celery', 'Colen', 'Colic', 'Colony', 'Corney', 'Corona', 'Dally', 'Evenly', 'Every', 'Evian', 'Finery', 'Galery', 'Galore', 'Golden', 'Golly', 'Jeneric', 'Jolly', 'Killer', 'Koran', 'Korona', 'Lesen', 'Lesion', 'Linen', 'Manic', 'Manley', 'Minaret', 'Minion', 'Organ', 'Pardin', 'Pardon', 'Pariah', 'Parody', 'Rayon', 'Rosary', 'Salamy', 'Salary', 'Sandall', 'Sandel', 'Sanity', 'Sonic', 'Taleban', 'Talker', 'Taller', 'Tallon', 'Tally', 'Tanery', 'Tonic', 'Vally', 'Vandall', 'Vanila'
 ]
 const unwanted = [
-  'brd', 'brg', 'brl', 'brn', 'brs', 'eses', 'Hala', 'ilic', 'ises', 'Jili',
+  'Aist', 'Aurst', 'brd', 'brg', 'brl', 'brn', 'brs', 'eses', 'Hala', 'ilic', 'ises', 'Jili',
   'sesto', 'shash', 'shish', 'sias', 'sis', 'sius'
 ]
 const firstParts = [
-  'Al', 'Alis', 'Aliv', 'Alv', 'Am', 'Amar', 'Amir', 'An', 'Ant', 'Ar', 'Arm', 'Ash', 'Aubr', 'Aud', 'Av', 'Aver', 'Ay', 'Az', 'Bar', 'Bay', 'Bel', 'Ben', 'Bes', 'Bev', 'Bon', 'Brin', 'Bris', 'Cad', 'Cal', 'Cam', 'Can', 'Car', 'Cas', 'Cel', 'Char', 'Chay', 'Chel', 'Col', 'Cor', 'Dal', 'Dan', 'Dar', 'Dav', 'Day', 'Des', 'Dil', 'Dom', 'Don', 'Dor', 'El', 'Elan', 'Elis', 'Elor', 'Em', 'Emal', 'Er', 'Ev', 'Fay', 'Fin', 'Fran', 'Gal', 'Gar', 'Gav', 'Gis', 'Glen', 'Gol', 'Hal', 'Has', 'Hav', 'Jak', 'Jal', 'Jam', 'Jan', 'Jay', 'Jen', 'Jes', 'Jil', 'Jol', 'Jon', 'Jor', 'Jos', 'Jov', 'Jul', 'Jun', 'Kad', 'Kal', 'Kam', 'Kar', 'Kas', 'Kat', 'Kav', 'Kay', 'Ken', 'Khal', 'Kil', 'Kim', 'Kir', 'Kol', 'Kor', 'Lan', 'Lar', 'Lash', 'Lat', 'Lay', 'Les', 'Lil', 'Lin', 'Lon', 'Lor', 'Mad', 'Mal', 'Man', 'Mar', 'Mas', 'Mav', 'Max', 'May', 'Mel', 'Mik', 'Mil', 'Min', 'Mon', 'Mor', 'Nay', 'Nev', 'Nor', 'Or', 'Par', 'Pay', 'Ran', 'Rav', 'Ray', 'Ren', 'Rol', 'Rom', 'Ron', 'Ros', 'Rus', 'Sal', 'Sam', 'San', 'Sar', 'Sav', 'Shay', 'Sher', 'Sin', 'Son', 'Sor', 'Tal', 'Tan', 'Tay', 'Ter', 'Tes', 'Tin', 'Ton', 'Trav', 'Trev', 'Trey', 'Val', 'Van', 'Vay', 'Way', 'Wil', 'Zan', 'Zay', 'Zel'
+  'Ab', 'Ad', 'Ain', 'Ais', 'Al', 'Alis', 'Aliv', 'Alv', 'Am', 'Amar', 'An', 'Ant', 'Ar', 'Arm', 'Ash', 'Aubr', 'Aud', 'Aur', 'Av', 'Aver', 'Ay', 'Az', 'Bar', 'Bay', 'Bel', 'Ben', 'Bes', 'Bev', 'Bon', 'Brin', 'Bris', 'Cad', 'Cal', 'Cam', 'Can', 'Car', 'Cas', 'Cel', 'Char', 'Chay', 'Chel', 'Col', 'Cor', 'Dal', 'Dan', 'Dar', 'Dav', 'Day', 'Des', 'Dil', 'Dom', 'Don', 'Dor', 'El', 'Elan', 'Elis', 'Elor', 'Em', 'Emal', 'Er', 'Ev', 'Fay', 'Fin', 'Fran', 'Gal', 'Gar', 'Gav', 'Gis', 'Glen', 'Gol', 'Hal', 'Has', 'Hav', 'Jak', 'Jal', 'Jam', 'Jan', 'Jay', 'Jen', 'Jes', 'Jil', 'Jol', 'Jon', 'Jor', 'Jos', 'Jov', 'Jul', 'Jun', 'Kad', 'Kal', 'Kam', 'Kar', 'Kas', 'Kat', 'Kav', 'Kay', 'Ken', 'Khal', 'Kil', 'Kim', 'Kir', 'Kol', 'Kor', 'Lan', 'Lar', 'Las', 'Lat', 'Lay', 'Les', 'Lil', 'Lin', 'Lon', 'Lor', 'Mad', 'Mal', 'Man', 'Mar', 'Mas', 'Mav', 'Max', 'May', 'Mel', 'Mik', 'Mil', 'Min', 'Mon', 'Mor', 'Nay', 'Nev', 'Nor', 'Or', 'Par', 'Pay', 'Ran', 'Rav', 'Ray', 'Ren', 'Rol', 'Rom', 'Ron', 'Ros', 'Rus', 'Sal', 'Sam', 'San', 'Sar', 'Sav', 'Shay', 'Sher', 'Sin', 'Son', 'Sor', 'Tal', 'Tan', 'Tay', 'Ter', 'Tes', 'Tin', 'Ton', 'Trav', 'Trev', 'Trey', 'Val', 'Van', 'Vay', 'Way', 'Wil', 'Zan', 'Zay', 'Zel'
 ]
 const afterL = [
   'ber', 'bert', 'bo', 'by', 'da', 'den', 'die', 'ker', 'kin', 'la', 'lamy',
   'lan', 'land', 'lary', 'las', 'ler', 'liam', 'lian', 'liana', 'liot', 'lis',
   'lison', 'livan', 'lo', 'lon', 'ly'
 ]
+const afterN = [
+  'by', 'co', 'dall', 'del', 'do', 'dor', 'dro', 'dyn', 'kin', 'ley', 'lyn', 'ton'
+]
 const afterR = [
   'dan', 'dee', 'del', 'din', 'do', 'don', 'gan', 'la', 'lan', 'land', 'leen',
   'lem', 'len', 'lena', 'lene', 'line', 'lize', 'lon', 'los', 'lotta', 'low',
-  'na', 'nell', 'nesto', 'ney', 'nice', 'sha', 'shall', 'sten', 'stin', 'syn'
+  'na', 'nell', 'nesto', 'ney', 'nic', 'sha', 'shall', 'sten', 'stin', 'syn'
+]
+const afterS = [
+  'lyn', 'sa', 'sica', 'sie', 'tal', 'tan', 'tavo', 'tina', 'tine', 'to', 'ton'
 ]
 const afterY = [
   'la', 'lani', 'len', 'na', 'on', 'ona', 'oni', 'ra', 'son'
@@ -591,13 +597,21 @@ const startName = () => {
   const random1st = Math.floor(Math.random() * firstParts.length)
   const first = firstParts[random1st]
   const firstEnds = first.charAt(first.length - 1)
-  const random = Math.floor(Math.random() * 7)
+  const randomOf7 = Math.floor(Math.random() * 7) + 1
+  const randomOf6 = Math.floor(Math.random() * 6) + 1
+  const randomOf15 = Math.floor(Math.random() * 15) + 1
+  const randomOf16 = Math.floor(Math.random() * 16) + 1
+
   if (firstEnds === 'y') {
     finishName(first, firstEnds, afterY)
-  } else if (firstEnds === 'l' && random === 1) {
+  } else if (firstEnds === 'l' && randomOf7 === 1) {
     finishName(first, firstEnds, afterL)
-  } else if (firstEnds === 'r' && random === 1) {
+  } else if (firstEnds === 'r' && randomOf6 === 1) {
     finishName(first, firstEnds, afterR)
+  } else if (firstEnds === 'n' && randomOf15 === 1) {
+    finishName(first, firstEnds, afterN)
+  } else if (firstEnds === 's' && randomOf16 === 1) {
+    finishName(first, firstEnds, afterS)
   } else {
     finishName(first, firstEnds, afterCons)
   }
@@ -613,8 +627,8 @@ const makeNames = () => {
   }
   showNames(genDiv, newNames)
   newNames = []
-  // makes 21166 names, 60 x 352 = 21120
-  if (genNames.length >= 21120) {
+  // makes 22070 names, 60 x 367 = 22020
+  if (genNames.length >= 22020) {
     genNames = []
   }
 }
