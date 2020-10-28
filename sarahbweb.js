@@ -40,12 +40,6 @@ const notTopArrayM = [
 const notTopArrayF = [
   '#1001', 'Naya', '#1002', 'Adrienne', '#1003', 'Rilynn', '#1004', 'Nyomi', '#1005', 'Seraphina', '#1006', 'Artemis', '#1007', 'Kadence', '#1008', 'Leena', '#1009', 'Libby', '#1010', 'Marcella', '#1011', 'Marisol', '#1012', 'Tara', '#1013', 'Aspyn', '#1014', 'Loretta', '#1015', 'Azaria', '#1016', 'Bellamy', '#1017', 'Cara', '#1018', 'Carla', '#1019', 'Etta', '#1020', 'Majesty', '#1021', 'Honesty', '#1022', 'Jaylene', '#1023', 'Joselyn', '#1024', 'Lillianna', '#1025', 'Violette', '#1026', 'Aadhya', '#1027', 'Cherish', '#1028', 'Arely', '#1029', 'Ayva', '#1030', 'Emilie'
 ]
-const modernM = [
-  'Aayan', 'Alistair', 'Amias', 'Atreus', 'Ayan', 'Aziel', 'Azrael', 'Banks', 'Bear', 'Bellamy', 'Callahan', 'Calum', 'Colter', 'Dhruv', 'Eithan', 'Eliel', 'Emir', 'Ermias', 'Jakari', 'Kiaan', 'Kylian', 'Kyro', 'Legacy', 'Mac', 'Malakhi', 'Mylo', 'Niklaus', 'Remi', 'Rome', 'Salem', 'Sekani', 'Seven', 'Simeon', 'Tru', 'Wes', 'Yahya', 'Yisroel', 'Zyon'
-]
-const modernF = [
-  'Aila', 'Ainhoa', 'Alaiya', 'Amoura', 'Beatrix', 'Blessing', 'Denver', 'Elodie', 'Freyja', 'Halo', 'Indie', 'Kaisley', 'Malayah', 'Navy', 'Oakleigh', 'Persephone', 'Salem', 'Sevyn', 'Theodora', 'Zendaya'
-]
 const unuArrayM = [
   'Abner', 'Adiel', 'Adler', 'Ander', 'Andreas', 'Avi', 'Azael', 'Benedict', 'Benton', 'Bishop', 'Boaz', 'Brayson', 'Brysen', 'Cillian', 'Coen', 'Coleson', 'Decker', 'Eliam', 'Elon', 'Emmet', 'Evander', 'Everest', 'Ezrah', 'Gannon', 'Gianluca', 'Greysen', 'Imran', 'Jenson', 'Jones', 'Kaine', 'Kaisen', 'Karim', 'Karsen', 'Karsyn', 'Kolt', 'Kooper', 'Korbyn', 'Kyzer', 'Laith', 'Macklin', 'Meir', 'Montgomery', 'Murphy', 'Nazir', 'Noble', 'Ocean', 'Pharaoh', 'Raheem', 'Rio', 'Rylen', 'Shimon', 'Shlomo', 'Syncere', 'Torin', 'Viaan', 'Yitzchok', 'Yoel', 'Zakari', 'Zeus', 'Zev'
 ]
@@ -157,6 +151,12 @@ const the2000sF = [
 const the2010sF = [
   'Adaline', 'Addilyn', 'Aitana', 'Alayah', 'Antonella', 'Ariah', 'Ariyah', 'Arya', 'Aviana', 'Avianna', 'Azalea', 'Blakely', 'Braelynn', 'Briella', 'Carter', 'Cataleya', 'Charleigh', 'Charli', 'Collins', 'Daleyza', 'Elliott', 'Emberly', 'Emersyn', 'Emmalyn', 'Emory', 'Everleigh', 'Everly', 'Freya', 'Gracelynn', 'Jemma', 'Journee', 'Julieta', 'Juniper', 'Kailani', 'Kaylani', 'Kehlani', 'Kensley', 'Kora', 'Lennon', 'Lilith', 'Magnolia', 'Maisie', 'Malaysia', 'Margot', 'Milani', 'Nova', 'Oakley', 'Oaklyn', 'Paislee', 'Reign', 'Remi', 'Remington', 'Royalty', 'Sawyer', 'Saylor', 'Tenley', 'Thea', 'Wren', 'Wynter', 'Zuri'
 ]
+const modernM = [
+  'Aayan', 'Alistair', 'Amias', 'Atreus', 'Ayan', 'Aziel', 'Azrael', 'Banks', 'Bear', 'Bellamy', 'Callahan', 'Calum', 'Colter', 'Dhruv', 'Eithan', 'Eliel', 'Emir', 'Ermias', 'Jakari', 'Kiaan', 'Kylian', 'Kyro', 'Legacy', 'Mac', 'Malakhi', 'Mylo', 'Niklaus', 'Remi', 'Rome', 'Salem', 'Sekani', 'Seven', 'Simeon', 'Tru', 'Wes', 'Yahya', 'Yisroel', 'Zyon'
+]
+const modernF = [
+  'Aila', 'Ainhoa', 'Alaiya', 'Amoura', 'Beatrix', 'Blessing', 'Denver', 'Elodie', 'Freyja', 'Halo', 'Indie', 'Kaisley', 'Malayah', 'Navy', 'Oakleigh', 'Persephone', 'Salem', 'Sevyn', 'Theodora', 'Zendaya'
+]
 
 // Need both listHolder and Div for flexbox to work
 const components = [
@@ -234,19 +234,7 @@ const components = [
     listArray: notTopArrayF,
     type: 'h5thenH4'
   },
-  // Modern
-  {
-    listDiv: document.querySelector('#modDivM'),
-    listHolder: document.querySelector('#modListM'),
-    listArray: modernM,
-    type: 'reg'
-  },
-  {
-    listDiv: document.querySelector('#modDivF'),
-    listHolder: document.querySelector('#modListF'),
-    listArray: modernF,
-    type: 'reg'
-  },
+
   // Unusual
   {
     listDiv: document.querySelector('#unuDivM'),
@@ -462,6 +450,19 @@ const components = [
     listHolder: document.querySelector('#the2010sListF'),
     listArray: the2010sF,
     type: 'reg'
+  },
+  // Modern
+  {
+    listDiv: document.querySelector('#modDivM'),
+    listHolder: document.querySelector('#modListM'),
+    listArray: modernM,
+    type: 'reg'
+  },
+  {
+    listDiv: document.querySelector('#modDivF'),
+    listHolder: document.querySelector('#modListF'),
+    listArray: modernF,
+    type: 'reg'
   }
 ]
 
@@ -517,19 +518,19 @@ were generated, and only put those names in the actualNames array, so they could
 be excluded without slowing down the site.
 */
 const actualNames = [
-  'Adalee', 'Adaline', 'Adalyn', 'Adeline', 'Adelyn', 'Adiel', 'Adonis', 'Alana', 'Alani', 'Alanna', 'Alaric', 'Alaya', 'Alayna', 'Albert', 'Alden', 'Alena', 'Aliah', 'Aliana', 'Alijah', 'Alina', 'Alisa', 'Alisha', 'Alison', 'Alissa', 'Aliya', 'Aliza', 'Allan', 'Allison', 'Alondra', 'Alonso', 'Alonzo', 'Alora', 'Alvaro', 'Alvina', 'Amanda', 'Amani', 'Amara', 'Amari', 'Amaris', 'Amaya', 'Amiah', 'Amias', 'Amina', 'Amira', 'Amiya', 'Amora', 'Amoura', 'Anabel', 'Anahi', 'Anaya', 'Anika', 'Anita', 'Aniya', 'Antony', 'Ariah', 'Arian', 'Ariana', 'Ariel', 'Ariya', 'Arleen', 'Arlene', 'Arline', 'Armando', 'Armani', 'Avalyn', 'Averie', 'Avery', 'Aviana', 'Azalea', 'Aziel', 'Barney', 'Belen', 'Bella', 'Bellamy', 'Benita', 'Bessie', 'Bonita', 'Brinley', 'Caden', 'Callan', 'Cameron', 'Camila', 'Camilo', 'Caren', 'Carina', 'Carla', 'Carlene', 'Carlos', 'Carlotta', 'Caroline', 'Carolyn', 'Casandra', 'Casen', 'Cassie', 'Celina', 'Charity', 'Charla', 'Charleen', 'Charlene', 'Charlize', 'Colby', 'Coleen', 'Coleson', 'Colette', 'Coraline', 'Corina', 'Dalary', 'Daleyza', 'Dallas', 'Danette', 'Daniel', 'Daniela', 'Danika', 'Danita', 'Daren', 'Darian', 'Dariana', 'Dariel', 'Darien', 'Dario', 'Darion', 'Darius', 'Darla', 'Darleen', 'Darlene', 'Darnell', 'Davian', 'Davina', 'Davion', 'Daylen', 'Dayna', 'Dessie', 'Dilan', 'Dillan', 'Dillon', 'Doreen', 'Dorian', 'Elbert', 'Elena', 'Elian', 'Eliana', 'Elias', 'Elijah', 'Elina', 'Elisa', 'Eliseo', 'Elisha', 'Elissa', 'Eliza', 'Elliana', 'Elliot', 'Ellis', 'Ellison', 'Elora', 'Emani', 'Emerie', 'Emerson', 'Emery', 'Emilee', 'Emory', 'Erika', 'Ernesto', 'Evalyn', 'Evelyn', 'Evette', 'Finley', 'Franco', 'Galen', 'Garland', 'Goldie', 'Haven', 'Jakari', 'Jakayla', 'Jalen', 'Jalisa', 'Jamari', 'Jameson', 'Jamila', 'Jamison', 'Janette', 'Janiah', 'Janiya', 'Jayla', 'Jaylen', 'Jayson', 'Jenifer', 'Jesiah', 'Jessica', 'Jessie', 'Jillian', 'Jordan', 'Jordin', 'Jordon', 'Joselyn', 'Josette', 'Josiah', 'Joslyn', 'Jovan', 'Jovani', 'Julian', 'Juliana', 'Julien', 'Julio', 'Julius', 'Junior', 'Juniper', 'Kaden', 'Kalani', 'Kamari', 'Kameron', 'Kamila', 'Kamora', 'Karen', 'Karina', 'Karla', 'Karsyn', 'Kasandra', 'Kasen', 'Kassie', 'Katelyn', 'Katina', 'Kayla', 'Kaylani', 'Kaylen', 'Kayson', 'Kendall', 'Kenisha', 'Kenley', 'Khalani', 'Killian', 'Kimora', 'Kirsten', 'Kirstin', 'Kolby', 'Latasha', 'Latisha', 'Layla', 'Lessie', 'Lilian', 'Liliana', 'Lillian', 'Lilliana', 'Lilly', 'Lorelai', 'Loren', 'Lorena', 'Lorenzo', 'Loretta', 'Lorna', 'Madalyn', 'Madeline', 'Madelyn', 'Madison', 'Madisyn', 'Malachi', 'Malakai', 'Malani', 'Malaya', 'Maliah', 'Manuel', 'Maranda', 'Maren', 'Mariah', 'Marian', 'Mariana', 'Mariela', 'Marina', 'Mario', 'Marion', 'Marisa', 'Maritza', 'Marla', 'Marlen', 'Marlena', 'Marlene', 'Marlon', 'Marsha', 'Marshall', 'Maximo', 'Maximus', 'Mayra', 'Mayson', 'Melani', 'Melina', 'Melisa', 'Melody', 'Mikayla', 'Milan', 'Milana', 'Milani', 'Milena', 'Miller', 'Monika', 'Monique', 'Morgan', 'Moriah', 'Noreen', 'Orion', 'Randall', 'Raven', 'Rayna', 'Renata', 'Renita', 'Rolando', 'Rolland', 'Roman', 'Romeo', 'Romina', 'Rosalee', 'Rosalyn', 'Rosanna', 'Roselyn', 'Rosetta', 'Roslyn', 'Sally', 'Samara', 'Samira', 'Samuel', 'Saniya', 'Sarahi', 'Sariah', 'Sarina', 'Savana', 'Savanna', 'Savion', 'Shayla', 'Shayna', 'Soraya', 'Soren', 'Talan', 'Tanika', 'Tanisha', 'Taniya', 'Teresa', 'Tessa', 'Tessie', 'Tinley', 'Valentin', 'Valerie', 'Valery', 'Vanesa', 'Wilbert', 'Wilda', 'Willa', 'William', 'Willis', 'Zayla', 'Zelda', 'Zella', // 349
+  'Adalee', 'Adaline', 'Adalyn', 'Adeline', 'Adelyn', 'Adiel', 'Adonis', 'Alana', 'Alani', 'Alanna', 'Alaric', 'Alaya', 'Alayna', 'Albert', 'Alden', 'Alena', 'Aliah', 'Aliana', 'Alijah', 'Alina', 'Alisa', 'Alisha', 'Alison', 'Alissa', 'Aliya', 'Aliza', 'Allan', 'Allison', 'Alondra', 'Alonso', 'Alonzo', 'Alora', 'Alvaro', 'Alvina', 'Amanda', 'Amani', 'Amara', 'Amari', 'Amaris', 'Amaya', 'Amiah', 'Amias', 'Amina', 'Amira', 'Amiya', 'Amora', 'Amoura', 'Anabel', 'Anahi', 'Anaya', 'Anika', 'Anita', 'Aniya', 'Ariah', 'Arian', 'Ariana', 'Ariel', 'Ariya', 'Arleen', 'Arlene', 'Arline', 'Armando', 'Armani', 'Avalyn', 'Averie', 'Avery', 'Aviana', 'Azalea', 'Aziel', 'Barney', 'Belen', 'Bella', 'Bellamy', 'Benita', 'Bessie', 'Bonita', 'Brinley', 'Caden', 'Callan', 'Cameron', 'Camila', 'Camilo', 'Caren', 'Carina', 'Carla', 'Carlene', 'Carlos', 'Carlotta', 'Caroline', 'Carolyn', 'Casandra', 'Casen', 'Cassie', 'Celina', 'Charity', 'Charla', 'Charleen', 'Charlene', 'Charlize', 'Colby', 'Coleen', 'Coleson', 'Colette', 'Coraline', 'Corina', 'Dalary', 'Daleyza', 'Dallas', 'Danette', 'Daniel', 'Daniela', 'Danika', 'Danita', 'Daren', 'Darian', 'Dariana', 'Dariel', 'Darien', 'Dario', 'Darion', 'Darius', 'Darla', 'Darleen', 'Darlene', 'Darnell', 'Davian', 'Davina', 'Davion', 'Daylen', 'Dayna', 'Dessie', 'Dilan', 'Dillan', 'Dillon', 'Doreen', 'Dorian', 'Elbert', 'Elena', 'Elian', 'Eliana', 'Elias', 'Elijah', 'Elina', 'Elisa', 'Eliseo', 'Elisha', 'Elissa', 'Eliza', 'Elliana', 'Elliot', 'Ellis', 'Ellison', 'Elora', 'Emani', 'Emerie', 'Emerson', 'Emery', 'Emilee', 'Emory', 'Erika', 'Ernesto', 'Evalyn', 'Evelyn', 'Evette', 'Finley', 'Franco', 'Galen', 'Garland', 'Goldie', 'Haven', 'Jakari', 'Jakayla', 'Jalen', 'Jalisa', 'Jamari', 'Jameson', 'Jamila', 'Jamison', 'Janette', 'Janiah', 'Janiya', 'Jayla', 'Jaylen', 'Jayson', 'Jenifer', 'Jesiah', 'Jessica', 'Jessie', 'Jillian', 'Jordan', 'Jordin', 'Jordon', 'Joselyn', 'Josette', 'Josiah', 'Joslyn', 'Jovan', 'Jovani', 'Julian', 'Juliana', 'Julien', 'Julio', 'Julius', 'Junior', 'Juniper', 'Kaden', 'Kalani', 'Kamari', 'Kameron', 'Kamila', 'Kamora', 'Karen', 'Karina', 'Karla', 'Karsyn', 'Kasandra', 'Kasen', 'Kassie', 'Katelyn', 'Katina', 'Kayla', 'Kaylani', 'Kaylen', 'Kayson', 'Kendall', 'Kenisha', 'Kenley', 'Khalani', 'Killian', 'Kimora', 'Kirsten', 'Kirstin', 'Kolby', 'Latasha', 'Latisha', 'Layla', 'Lessie', 'Lilian', 'Liliana', 'Lillian', 'Lilliana', 'Lilly', 'Lorelai', 'Loren', 'Lorena', 'Lorenzo', 'Loretta', 'Lorna', 'Madalyn', 'Madeline', 'Madelyn', 'Madison', 'Madisyn', 'Malachi', 'Malakai', 'Malani', 'Malaya', 'Maliah', 'Manuel', 'Maranda', 'Maren', 'Mariah', 'Marian', 'Mariana', 'Mariela', 'Marina', 'Mario', 'Marion', 'Marisa', 'Maritza', 'Marla', 'Marlen', 'Marlena', 'Marlene', 'Marlon', 'Marsha', 'Marshall', 'Maximo', 'Maximus', 'Mayra', 'Mayson', 'Melani', 'Melina', 'Melisa', 'Melody', 'Mikayla', 'Milan', 'Milana', 'Milani', 'Milena', 'Miller', 'Monika', 'Monique', 'Morgan', 'Moriah', 'Noreen', 'Orion', 'Randall', 'Raven', 'Rayna', 'Renata', 'Renita', 'Rolando', 'Rolland', 'Roman', 'Romeo', 'Romina', 'Rosalee', 'Rosalyn', 'Rosanna', 'Roselyn', 'Rosetta', 'Roslyn', 'Sally', 'Samara', 'Samira', 'Samuel', 'Saniya', 'Sarahi', 'Sariah', 'Sarina', 'Savana', 'Savanna', 'Savion', 'Shayla', 'Shayna', 'Soraya', 'Soren', 'Talan', 'Tanika', 'Tanisha', 'Taniya', 'Teresa', 'Tessa', 'Tessie', 'Tinley', 'Valentin', 'Valerie', 'Valery', 'Vanesa', 'Wilbert', 'Wilda', 'Willa', 'William', 'Willis', 'Zayla', 'Zelda', 'Zella', // 349
   // Added
-  'Adison', 'Adisyn', 'Aleson', 'Anisa', 'Aubriel', 'Aubriela', 'Belamy', 'Calan', 'Calen', 'Cally', 'Carisa', 'Casidy', 'Casius', 'Casondra', 'Elison', 'Hally', 'Hasan', 'Jakeline', 'Jakoline', 'Jakson', 'Janesa', 'Kally', 'Karisa', 'Kasidy', 'Kendel', 'Kilian', 'Madaline', 'Madeson', 'Malisa', 'Malory', 'Mikenzie', 'Randel', 'Rosela', 'Wilard', 'Willy'
+  'Adison', 'Adisyn', 'Aleson', 'Anisa', 'Aubriel', 'Aubriela', 'Belamy', 'Calan', 'Calen', 'Cally', 'Carisa', 'Casidy', 'Casius', 'Casondra', 'Elison', 'Evanna', 'Hally', 'Hasan', 'Jakeline', 'Jakoline', 'Jakson', 'Janesa', 'Kally', 'Karisa', 'Kasidy', 'Kendel', 'Kilian', 'Madaline', 'Madeson', 'Malisa', 'Malory', 'Mikenzie', 'Randel', 'Rosela', 'Wilard', 'Willy'
 ]
 const rejects = [
-  'Alias', 'Alien', 'Allas', 'Amino', 'Amity', 'Antena', 'Antic', 'Arena', 'Aroma', 'Ashen', 'Audio', 'Avian', 'Baren', 'Belly', 'Caller', 'Cameo', 'Candor', 'Casino', 'Casio', 'Celery', 'Colen', 'Colic', 'Colony', 'Corney', 'Corona', 'Dally', 'Evenly', 'Every', 'Evian', 'Finery', 'Galery', 'Galore', 'Golden', 'Golly', 'Jeneric', 'Jolly', 'Killer', 'Koran', 'Korona', 'Lesen', 'Lesion', 'Linen', 'Manic', 'Manley', 'Minaret', 'Minion', 'Organ', 'Pardin', 'Pardon', 'Pariah', 'Parody', 'Rayon', 'Rosary', 'Salamy', 'Salary', 'Sandall', 'Sandel', 'Sanity', 'Sonic', 'Taleban', 'Talker', 'Taller', 'Tallon', 'Tally', 'Tanery', 'Tonic', 'Vally', 'Vandall', 'Vanila'
+  'Alias', 'Alien', 'Allas', 'Amino', 'Amity', 'Arena', 'Aroma', 'Ashen', 'Audio', 'Avian', 'Baren', 'Belly', 'Caller', 'Cameo', 'Candor', 'Casino', 'Casio', 'Celery', 'Colen', 'Colic', 'Colony', 'Corney', 'Corona', 'Dally', 'Evenly', 'Every', 'Evian', 'Finery', 'Galery', 'Galore', 'Golden', 'Golly', 'Jeneric', 'Jolly', 'Killer', 'Koran', 'Korona', 'Lesen', 'Lesion', 'Linen', 'Manic', 'Manley', 'Minaret', 'Minion', 'Organ', 'Pardin', 'Pardon', 'Pariah', 'Parody', 'Rayon', 'Rosary', 'Salamy', 'Salary', 'Sandall', 'Sandel', 'Sanity', 'Sinima', 'Sonic', 'Taleban', 'Talker', 'Taller', 'Tallon', 'Tally', 'Tanery', 'Tonic', 'Vally', 'Vandall', 'Vanila'
 ]
 const unwanted = [
   'Aist', 'Aurst', 'brd', 'brg', 'brl', 'brn', 'brs', 'eses', 'Hala', 'ilic',
   'ises', 'Jili', 'sesto', 'shash', 'shish', 'sias', 'sis', 'sius'
 ]
 const firstParts = [
-  'Ab', 'Ad', 'Ain', 'Ais', 'Al', 'Alis', 'Aliv', 'Alv', 'Am', 'Amar', 'An', 'Ant', 'Ar', 'Arm', 'Ash', 'Aubr', 'Aud', 'Aur', 'Av', 'Aver', 'Ay', 'Az', 'Bar', 'Bay', 'Bel', 'Ben', 'Bes', 'Bev', 'Bon', 'Brin', 'Bris', 'Cad', 'Cal', 'Cam', 'Can', 'Car', 'Cas', 'Cel', 'Char', 'Chay', 'Chel', 'Col', 'Cor', 'Dal', 'Dan', 'Dar', 'Dav', 'Day', 'Des', 'Dil', 'Dom', 'Don', 'Dor', 'El', 'Elan', 'Elis', 'Elor', 'Em', 'Emal', 'Er', 'Ev', 'Fay', 'Fin', 'Fran', 'Gal', 'Gar', 'Gav', 'Gis', 'Glen', 'Gol', 'Hal', 'Has', 'Hav', 'Jak', 'Jal', 'Jam', 'Jan', 'Jay', 'Jen', 'Jes', 'Jil', 'Jol', 'Jon', 'Jor', 'Jos', 'Jov', 'Jul', 'Jun', 'Kad', 'Kal', 'Kam', 'Kar', 'Kas', 'Kat', 'Kav', 'Kay', 'Ken', 'Khal', 'Kil', 'Kim', 'Kir', 'Kol', 'Kor', 'Lan', 'Lar', 'Las', 'Lat', 'Lay', 'Les', 'Lil', 'Lin', 'Lon', 'Lor', 'Mad', 'Mal', 'Man', 'Mar', 'Mas', 'Mav', 'Max', 'May', 'Mel', 'Mik', 'Mil', 'Min', 'Mon', 'Mor', 'Nay', 'Nev', 'Nor', 'Or', 'Par', 'Pay', 'Ran', 'Rav', 'Ray', 'Ren', 'Rol', 'Rom', 'Ron', 'Ros', 'Rus', 'Sal', 'Sam', 'San', 'Sar', 'Sav', 'Shay', 'Sher', 'Sin', 'Son', 'Sor', 'Tal', 'Tan', 'Tay', 'Ter', 'Tes', 'Tin', 'Ton', 'Trav', 'Trev', 'Trey', 'Val', 'Van', 'Vay', 'Way', 'Wil', 'Zan', 'Zay', 'Zel'
+  'Ab', 'Ad', 'Ain', 'Ais', 'Al', 'Alis', 'Aliv', 'Alv', 'Am', 'Amar', 'An', 'Ar', 'Arm', 'Ash', 'Aubr', 'Aud', 'Aur', 'Av', 'Aver', 'Ay', 'Az', 'Bar', 'Bay', 'Bel', 'Ben', 'Bes', 'Bev', 'Bon', 'Brin', 'Bris', 'Cad', 'Cal', 'Cam', 'Can', 'Car', 'Cas', 'Cel', 'Char', 'Chay', 'Chel', 'Col', 'Cor', 'Dal', 'Dan', 'Dar', 'Dav', 'Day', 'Des', 'Dil', 'Dom', 'Don', 'Dor', 'El', 'Elan', 'Elis', 'Elor', 'Em', 'Emal', 'Er', 'Ev', 'Fay', 'Fin', 'Fran', 'Gal', 'Gar', 'Gav', 'Gis', 'Glen', 'Gol', 'Hal', 'Has', 'Hav', 'Jak', 'Jal', 'Jam', 'Jan', 'Jay', 'Jen', 'Jes', 'Jil', 'Jol', 'Jon', 'Jor', 'Jos', 'Jov', 'Jul', 'Jun', 'Kad', 'Kal', 'Kam', 'Kar', 'Kas', 'Kat', 'Kav', 'Kay', 'Ken', 'Khal', 'Kil', 'Kim', 'Kir', 'Kol', 'Kor', 'Lan', 'Lar', 'Las', 'Lat', 'Lay', 'Les', 'Lil', 'Lin', 'Lon', 'Lor', 'Mad', 'Mal', 'Man', 'Mar', 'Mas', 'Mav', 'Max', 'May', 'Mel', 'Mik', 'Mil', 'Min', 'Mon', 'Mor', 'Nay', 'Nev', 'Nor', 'Or', 'Par', 'Pay', 'Ran', 'Rav', 'Ray', 'Ren', 'Rol', 'Rom', 'Ron', 'Ros', 'Rus', 'Sal', 'Sam', 'San', 'Sar', 'Sav', 'Shay', 'Sher', 'Sin', 'Son', 'Sor', 'Tal', 'Tan', 'Tay', 'Ter', 'Tes', 'Tin', 'Ton', 'Trav', 'Trev', 'Trey', 'Val', 'Van', 'Vay', 'Way', 'Wil', 'Zan', 'Zay', 'Zel'
 ]
 const afterL = [
   'ber', 'bert', 'bo', 'by', 'da', 'den', 'die', 'ker', 'kin', 'la', 'lamy',
@@ -585,8 +586,7 @@ const checkName = (name) => {
 }
 
 const finishName = (first, firstEnds, lastArray) => {
-  const random = Math.floor(Math.random() * lastArray.length)
-  const last = lastArray[random]
+  const last = lastArray[Math.floor(Math.random() * lastArray.length)]
   const name = first + last
   check1stAndLast(first, firstEnds, last, name)
   checkName(name)
@@ -599,8 +599,7 @@ const finishName = (first, firstEnds, lastArray) => {
 }
 
 const startName = () => {
-  const random1st = Math.floor(Math.random() * firstParts.length)
-  const first = firstParts[random1st]
+  const first = firstParts[Math.floor(Math.random() * firstParts.length)]
   const firstEnds = first.charAt(first.length - 1)
   const randomOf7 = Math.floor(Math.random() * 7) + 1
   const randomOf6 = Math.floor(Math.random() * 6) + 1
@@ -632,8 +631,8 @@ const makeNames = () => {
   }
   showNames(genDiv, newNames)
   newNames = []
-  // makes 22070 names, 60 x 367 = 22020
-  if (genNames.length >= 22020) {
+  // makes 21905 names, 60 x 365 = 21900
+  if (genNames.length >= 21900) {
     genNames = []
   }
 }
@@ -643,8 +642,7 @@ const genButton = document.querySelector('.genButton')
 genButton.addEventListener('click', () => {
   if (genList.style.display === 'block') {
     $(genList).slideUp()
-  }
-  if (genList.style.display !== 'block') {
+  } else {
     makeNames()
     $(genList).slideDown()
   }
@@ -691,9 +689,8 @@ const showNamesWith2Lines = (type, listDiv, listArray) => {
       h4Element.classList.add('h4forNameWide')
       h5Element.classList.add('h5withNameWide')
       divFor2.classList.add('divWithH4andH5wide')
-    }
+    } else {
     // notTop
-    if (type === 'h5thenH4') {
       h5Element.appendChild(item1Text)
       h4Element.appendChild(item2Text)
       divFor2.appendChild(h5Element)
@@ -719,8 +716,7 @@ for (let i = 0; i < buttons.length; i++) {
         const type = listMakeup.type
         if (listHolder.style.display === 'block') {
           $(listHolder).slideUp()
-        }
-        if (listHolder.style.display !== 'block') {
+        } else {
           clearAndSlideDown(listDiv, listHolder)
           if (type === 'reg') {
             showNames(listDiv, listArray)
@@ -750,35 +746,37 @@ const letterArrayF = []
 const letterListF = document.querySelector('#letterListF')
 const letterDivF = document.querySelector('#letterDivF')
 
-let showing = 'nothing'
+let boyShowing = 'nothing'
+let girlShowing = 'nothing'
+let maleShowing = 'nothing'
+let femShowing = 'nothing'
 
-const showLetterList = (group, letter1, clicked, listHolder) => {
+const showLetterList = (group, letter1, clickedLetter, listHolder) => {
   let letterDiv
   let nameArray
   let letterArray
-  showing = clicked
 
   if (group === 'boy') {
     letterDiv = letterDivBoy
     nameArray = maleLetterNames
     letterArray = letterArrayBoy
-  }
-  if (group === 'girl') {
+    boyShowing = clickedLetter
+  } else if (group === 'girl') {
     letterDiv = letterDivGirl
     nameArray = femLetterNames
     letterArray = letterArrayGirl
-  }
-  if (group === 'male') {
+    girlShowing = clickedLetter
+  } else if (group === 'male') {
     letterDiv = letterDivM
     nameArray = the1880sM
     letterArray = letterArrayM
-  }
-  if (group === 'female') {
+    maleShowing = clickedLetter
+  } else if (group === 'fem') {
     letterDiv = letterDivF
     nameArray = the1880sF
     letterArray = letterArrayF
+    femShowing = clickedLetter
   }
-
   clearAndSlideDown(letterDiv, listHolder)
 
   for (let i = 0; i < nameArray.length; i++) {
@@ -792,41 +790,80 @@ const showLetterList = (group, letter1, clicked, listHolder) => {
   letterArray.length = 0
 }
 
-const letterButtons = document.querySelectorAll('.letterButton')
-for (let i = 0; i < letterButtons.length; i++) {
-  letterButtons[i].addEventListener('click', (e) => {
-    let group
-    let listHolder
-    let clickedLetter = e.target.id
-    // ids are boyA, boyB, etc.
-    if (clickedLetter.includes('boy')) {
-      group = 'boy'
-      listHolder = letterListBoy
-    }
-    if (clickedLetter.includes('girl')) {
-      group = 'girl'
-      listHolder = letterListGirl
-    }
-    if (clickedLetter.includes('male')) {
-      group = 'male'
-      listHolder = letterListM
-    }
-    if (clickedLetter.includes('female')) {
-      group = 'female'
-      listHolder = letterListF
-    }
+const lettersBoy = document.querySelectorAll('.letterBoy')
+for (let i = 0; i < lettersBoy.length; i++) {
+  lettersBoy[i].addEventListener('click', (e) => {
+    const clickedLetter = e.target.id
+    const group = 'boy'
+    const listHolder = letterListBoy
     const letter1 = clickedLetter.charAt(clickedLetter.length - 1)
     if (listHolder.style.display === 'block') {
-      if (showing !== clickedLetter) {
+      if (boyShowing !== clickedLetter) {
         showLetterList(group, letter1, clickedLetter, listHolder)
-        clickedLetter = 'shown'
+      } else {
+        $(listHolder).slideUp()
+        boyShowing = 'nothing'
       }
+    } else {
+      showLetterList(group, letter1, clickedLetter, listHolder)
     }
-    if (listHolder.style.display === 'block' && showing === clickedLetter) {
-      $(listHolder).slideUp()
-      showing = 'nothing'
+  })
+}
+const lettersGirl = document.querySelectorAll('.letterGirl')
+for (let i = 0; i < lettersGirl.length; i++) {
+  lettersGirl[i].addEventListener('click', (e) => {
+    const clickedLetter = e.target.id
+    const group = 'girl'
+    const listHolder = letterListGirl
+    const letter1 = clickedLetter.charAt(clickedLetter.length - 1)
+    if (listHolder.style.display === 'block') {
+      if (girlShowing !== clickedLetter) {
+        showLetterList(group, letter1, clickedLetter, listHolder)
+      } else {
+        $(listHolder).slideUp()
+        girlShowing = 'nothing'
+      }
+    } else {
+      showLetterList(group, letter1, clickedLetter, listHolder)
     }
-    if (listHolder.style.display !== 'block') {
+  })
+}
+const lettersMale = document.querySelectorAll('.letterMale')
+for (let i = 0; i < lettersMale.length; i++) {
+  lettersMale[i].addEventListener('click', (e) => {
+    const clickedLetter = e.target.id
+    console.log('clickedLetter is ' + clickedLetter)
+    const group = 'male'
+    const listHolder = letterListM
+    const letter1 = clickedLetter.charAt(clickedLetter.length - 1)
+    if (listHolder.style.display === 'block') {
+      if (maleShowing !== clickedLetter) {
+        showLetterList(group, letter1, clickedLetter, listHolder)
+      } else {
+        $(listHolder).slideUp()
+        maleShowing = 'nothing'
+      }
+    } else {
+      showLetterList(group, letter1, clickedLetter, listHolder)
+    }
+  })
+}
+const lettersFem = document.querySelectorAll('.letterFem')
+for (let i = 0; i < lettersFem.length; i++) {
+  lettersFem[i].addEventListener('click', (e) => {
+    const clickedLetter = e.target.id
+    console.log('clickedLetter is ' + clickedLetter)
+    const group = 'fem'
+    const listHolder = letterListF
+    const letter1 = clickedLetter.charAt(clickedLetter.length - 1)
+    if (listHolder.style.display === 'block') {
+      if (femShowing !== clickedLetter) {
+        showLetterList(group, letter1, clickedLetter, listHolder)
+      } else {
+        $(listHolder).slideUp()
+        femShowing = 'nothing'
+      }
+    } else {
       showLetterList(group, letter1, clickedLetter, listHolder)
     }
   })
