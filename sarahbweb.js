@@ -832,7 +832,6 @@ const lettersMale = document.querySelectorAll('.letterMale')
 for (let i = 0; i < lettersMale.length; i++) {
   lettersMale[i].addEventListener('click', (e) => {
     const clickedLetter = e.target.id
-    console.log('clickedLetter is ' + clickedLetter)
     const group = 'male'
     const listHolder = letterListM
     const letter1 = clickedLetter.charAt(clickedLetter.length - 1)
@@ -852,7 +851,6 @@ const lettersFem = document.querySelectorAll('.letterFem')
 for (let i = 0; i < lettersFem.length; i++) {
   lettersFem[i].addEventListener('click', (e) => {
     const clickedLetter = e.target.id
-    console.log('clickedLetter is ' + clickedLetter)
     const group = 'fem'
     const listHolder = letterListF
     const letter1 = clickedLetter.charAt(clickedLetter.length - 1)
